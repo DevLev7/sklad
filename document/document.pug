@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="document.css")
+        script(src="..//document/app.js")
+        title Главная
+    body
+        include ../header/header.pug
+        main
+            .container
+                form.form-doc(id="form_doc")
+                    h1 Добавление нового документа
+                    .flex
+                        .block__left
+                            .block__input
+                                .dropdown
+                                    select(name="dropdown")
+                                        p 
+                                            option(value="") Тип документа
+                                        option(value="1") 1
+                                        option(value="2") 1
+                                        option(value="3") 3
+                            .block__input
+                                p Номер 
+                                input(type="text", value="")
+                            .block__input
+                                p Дата 
+                                input(type="date", value="")
+                            .block__input
+                                .dropdown
+                                    select(name="dropdown")
+                                        p 
+                                            option(value="") Склад
+                                        option(value="1") Основной 
+                                        option(value="2") Дополнительный
+                            .block__input
+                                p Организация 
+                                input(type="text", value="")
+                            .block__input
+                                p Контрагент 
+                                input(type="text", value="")
+                        .block__right
+                            .block__input
+                                p Комментарий
+                                textarea(name="", cols="60", rows="10")
+                            .block__input
+                                button(type="submit" onclick="closeForm()") Добавить документ
+
+                .block__title.flex
+                    h1 Документация
+                    button(type="submit" onclick="openForm()") + Документ
+                table
+                    tr
+                        th Тип документа
+                        th №
+                        th Время
+                        th Склад
+                        th Организация
+                        th Контрагент
+                        tr
+                            td Заказ
+                            td 
+                                a(href="#") 001
+                            td 09.11.2020
+                            td Основной
+                            td ОАО "БСК"
+                            td ООО "ПРОМТОРГ"  
+                        tr
+                            td Заказ
+                            td 
+                                a(href="#") 002
+                            td 12.11.2020
+                            td Основной
+                            td ОАО "БСК"
+                            td ООО "ПРОМТОРГ"    
+                

@@ -1,0 +1,21 @@
+@import "../base.scss";
+@import "../header/header.scss";
+
+
+main{
+    margin-top: 60px;
+    table{
+        margin-top: 40px;
+        width: 1000px;
+        tr{
+            text-align: left;
+            height: 30px;
+            th{
+                background-color:rgb(148, 174, 196);
+            }
+            td{
+                background-color: rgb(231, 236, 238);
+            }
+        }
+    }
+}

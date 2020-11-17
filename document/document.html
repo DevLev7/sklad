@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="document.css"/>
+    <script src="..//document/app.js"></script>
     <title>Главная</title>
   </head>
   <body>
@@ -31,79 +32,92 @@
       </div>
     </header>
     <main>
-      <div class="container flex">
-        <div class="content-block">
-          <h1>Продажи за 30 дней</h1>
-          <hr/>
-          <h2>19 * 186 305, 30</h2>
-          <table>
-            <tr>
-              <th>Наименование</th>
-              <th>Сумма</th>
-              <th>Количество</th>
-            </tr>
-            <tr>
-              <td>Сода кальцинированная</td>
-              <td class="width">1 003 000</td>
-              <td class="width">10 000</td>
-            </tr>
-            <tr>
-              <td>Натрий двууглекислый (бикарбонат натрия)</td>
-              <td>500 000</td>
-              <td>3 000</td>
-            </tr>
-            <tr>
-              <td>Хлористый кальций (жидкий)</td>
-              <td>200 000</td>
-              <td>4 000</td>
-            </tr>
-            <tr>
-              <td>Сажи белые и кремнеземные наполнители</td>
-              <td>159 000</td>
-              <td>4 500    </td>
-            </tr>
-          </table>
+      <div class="container">
+        <form class="form-doc" id="form_doc">
+          <h1>Добавление нового документа</h1>
+          <div class="flex">
+            <div class="block__left">
+              <div class="block__input">
+                <div class="dropdown">
+                  <select name="dropdown">
+                    <p> 
+                      <option value="">Тип документа</option>
+                    </p>
+                    <option value="1">1</option>
+                    <option value="2">1</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="block__input">
+                <p>Номер </p>
+                <input type="text" value=""/>
+              </div>
+              <div class="block__input">
+                <p>Дата </p>
+                <input type="date" value=""/>
+              </div>
+              <div class="block__input">
+                <div class="dropdown">
+                  <select name="dropdown">
+                    <p> 
+                      <option value="">Склад</option>
+                    </p>
+                    <option value="1">Основной </option>
+                    <option value="2">Дополнительный</option>
+                  </select>
+                </div>
+              </div>
+              <div class="block__input">
+                <p>Организация </p>
+                <input type="text" value=""/>
+              </div>
+              <div class="block__input">
+                <p>Контрагент </p>
+                <input type="text" value=""/>
+              </div>
+            </div>
+            <div class="block__right">
+              <div class="block__input">
+                <p>Комментарий</p>
+                <textarea name="" cols="60" rows="10"></textarea>
+              </div>
+              <div class="block__input">
+                <button type="submit" onclick="closeForm()">Добавить документ</button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="block__title flex">
+          <h1>Документация</h1>
+          <button type="submit" onclick="openForm()">+ Документ</button>
         </div>
-        <div class="graf-block"><img src="../img/graf.png" alt=""/></div>
-      </div>
-      <div class="container flex">
-        <div class="content-block2">
-          <h1>Просроченные заказы</h1>
-          <hr/>
-          <h2>1 * 4</h2>
-          <table>
+        <table>
+          <tr>
+            <th>Тип документа</th>
+            <th>№</th>
+            <th>Время</th>
+            <th>Склад</th>
+            <th>Организация</th>
+            <th>Контрагент</th>
             <tr>
-              <th>Контрагент</th>
-              <th>Сумма</th>
-              <th>Заказ</th>
-              <th>Срок</th>
+              <td>Заказ</td>
+              <td> <a href="#">001</a></td>
+              <td>09.11.2020</td>
+              <td>Основной</td>
+              <td>ОАО "БСК"</td>
+              <td>ООО "ПРОМТОРГ"  </td>
             </tr>
             <tr>
-              <td>ОАО Наименование</td>
-              <td class="width"> 103 000</td>
-              <td class="width">300</td>
-              <td class="width">20</td>
+              <td>Заказ</td>
+              <td> <a href="#">002</a></td>
+              <td>12.11.2020</td>
+              <td>Основной</td>
+              <td>ОАО "БСК"</td>
+              <td>ООО "ПРОМТОРГ"    </td>
             </tr>
-            <tr>
-              <td>ОАО Наименование</td>
-              <td class="width"> 103 000</td>
-              <td class="width">300</td>
-              <td class="width">20</td>
-            </tr>
-            <tr>
-              <td>ОАО Наименование</td>
-              <td class="width"> 103 000</td>
-              <td class="width">300</td>
-              <td class="width">20</td>
-            </tr>
-            <tr>
-              <td>ОАО Наименование</td>
-              <td class="width"> 103 000</td>
-              <td class="width">300</td>
-              <td class="width">20</td>
-            </tr>
-          </table>
-        </div>
+          </tr>
+        </table>
       </div>
     </main>
   </body>

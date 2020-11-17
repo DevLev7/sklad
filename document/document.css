@@ -132,28 +132,103 @@ header .header-auth a {
 }
 
 main {
-  padding: 50px 0;
+  position: relative;
+  z-index: 1;
+  padding: 60px 0;
 }
-main .content-block {
-  margin-top: 60px;
+main .block__title {
+  margin-bottom: 60px;
 }
-main .graf-block {
-  margin-left: 180px;
+main .block__title h1 {
+  margin-right: 20px;
 }
-main .graf-block img {
-  width: 600px;
-  height: auto;
+main .block__title button {
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #3b56a1;
+  border: 1px solid #2e4585;
+  border-radius: 7px;
+  cursor: pointer;
+}
+main .block__title button:hover {
+  background-color: #273868;
+}
+main table {
+  width: 1000px;
+}
+main table tr {
+  text-align: left;
+  height: 30px;
+}
+main table tr th {
+  background-color: #94aec4;
+}
+main table tr td {
+  background-color: #e7ecee;
 }
 
-table {
-  margin-top: 30px;
+form {
+  padding: 15px 60px;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  margin: auto;
+  width: 858px;
+  height: 435px;
+  left: 300px;
+  background-color: #e7ecee;
+  border: 1px solid #EDEDED;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
 }
-table tr th {
-  border-bottom: 1px solid #000;
+form h1 {
+  margin-bottom: 15px;
 }
-table tr td {
-  text-align: center;
+form .block__input {
+  margin-bottom: 15px;
 }
-table tr .width {
-  width: 100px;
+form .block__input p {
+  margin-right: 10px;
+}
+
+.dropdown select {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  padding: 9px 0 9px 15px;
+  border: 0;
+  width: 200px;
+}
+.dropdown select:hover, .dropdown select:focus {
+  border: 0;
+  outline: none;
+}
+
+input {
+  width: 200px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 9px 15px 9px 15px;
+}
+input:hover, input:focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  outline: none;
+}
+
+.block__left {
+  margin-right: 80px;
+}
+
+button {
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #3b56a1;
+  border: 1px solid #2e4585;
+  border-radius: 7px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #273868;
 }

@@ -132,28 +132,19 @@ header .header-auth a {
 }
 
 main {
-  padding: 50px 0;
-}
-main .content-block {
   margin-top: 60px;
 }
-main .graf-block {
-  margin-left: 180px;
+main table {
+  margin-top: 40px;
+  width: 1000px;
 }
-main .graf-block img {
-  width: 600px;
-  height: auto;
+main table tr {
+  text-align: left;
+  height: 30px;
 }
-
-table {
-  margin-top: 30px;
+main table tr th {
+  background-color: #94aec4;
 }
-table tr th {
-  border-bottom: 1px solid #000;
-}
-table tr td {
-  text-align: center;
-}
-table tr .width {
-  width: 100px;
+main table tr td {
+  background-color: #e7ecee;
 }
